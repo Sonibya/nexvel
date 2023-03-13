@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+	<link rel="shortcut icon" href="../ikon/logoBar.jpeg">
+    <title>Contact Us</title>
+</head>
+<body>
+	 <!-- Navigation Bar -->
+	 <nav>
+		<div class="logo">
+		  <img src="../ikon/logo-black.svg" alt="">
+		</div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-btn">
+		<i class="fas fa-bars"></i>
+		</label>
+		<ul>
+		   <li><a href="../index.html">Home</a></li>
+		   <li><a href="../about/">About</a></li>
+		   <li><a href="../games/">Games</a></li>
+		   <li><a href="../news/">News</a></li>
+		   <li><a href="../career/">Career</a></li>
+		   <li><a class="active" href="#">Contact</a></li>
+		</ul>
+   </nav>
+
+<!-- Navigation Bar -->
+
+
+<!-- Hero Section Start -->
+
+<section class="hero">
+	<div class="container-hero">
+		<p class="p1">ANY QUESTIONS?</p>
+		<P class="p2">FEEL FREE TO <span style="color: #FF7A00;">CONTACT</span> US</P>
+	</div>
+</section>
+
+<!-- Hero Section End -->
+<!-- Section Contact Start -->
+<section class="section-contact">
+	<form action="https://formspree.io/f/xeqdnqae"  method="POST"/>
+   		<div class="container">
+                <div class="firstName">
+                    <label>First Name</label> <br>
+                    <input type="text" name="name" placeholder="Write your first name" />
+                </div>
+                <div class="lastName">
+                    <label>Last Name</label> <br>
+                    <input type="text" name="name" placeholder="Write your last name" />
+                </div>
+                <div class="Email">
+                    <label>Email</label> <br>
+                    <input type="email" name="email" placeholder="Write your email" />
+                </div>
+                <div class="Phone">
+                    <label>Phone</label> <br>
+                    <input type="text" name="Number" placeholder="+62" />
+                </div>
+                <div class="chooseSubject"> 
+                    <label>Choose Subject</label><br> 
+                        <select name="cars" id="cars">
+                            <option value="volvo">Suggestion</option>
+                            <option value="saab	">Report</option>
+                            <option value="opel">Collaboration</option>
+                            <option value="audi">Publishing</option>
+                            <option value="audi">Other</option>
+                        </select>
+				</div>   
+				<div class="Message"> 
+				<label>Message</label> <br>
+					<textarea class="isiPesan" type="text" name="Message" placeholder="Write your message"></textarea>
+				</div>
+				<div class="Send">
+					<input type="submit" name="submit" value="Submit"/>
+				</div>               
+		</div>
+</section>
+<!-- Section Contact End -->
+
+<footer>
+	<img src="../img/bg-footer.png" alt="">
+	<div class="footer-content">
+		<p>&copy 2022 Nexvel Entertainment | PT Nexvel Digital Group All Right Reserved</p>
+		<div class="footer-icon">
+			<a href="https://www.facebook.com/nexvelentertainment"> <img src="../ikon/footer/fb-black.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/nexvelentertainment">  <img src="../ikon/footer/ig-black.svg" alt="instagram"></a>
+            <a href="https://www.twitter.com/nexvelentertainment">  <img src="../ikon/footer/twitter-black.svg" alt="twitter"></a>
+            <a href=" https://www.tiktok.com/@nexvelentertainment">  <img src="../ikon/footer/tiktok-black.svg" alt="tiktok"></a>
+            <a href="https://www.youtube.com/channel/UCx7Svbq8skJ6EjpH5Gp1irQ"><img src="../ikon/footer/yt-black.svg" alt="youtube"></a>
+		</div>
+	</div>
+</footer>
+
+<script>
+
+	const nav = document.querySelector("nav");
+			const logo = document.querySelector('.logo');
+			const button = document.querySelector('.menu-btn i');
+			const navul = document.querySelector('nav ul');
+			const navuli = document.querySelector('nav ul li a');
+			window.onscroll = function() {myFunction()};
+			
+	
+			function myFunction() {
+				if (document.documentElement.scrollTop > 20) {
+					document.querySelector("nav").className = "sticky";
+					logo.innerHTML = '<img src="../ikon/logo-white.svg">';
+					button.style.color = 'white';
+	
+	
+					document.querySelector("nav ul").className = "sticky";
+					// navul.style.backgroundColor = 'black';
+	
+			
+				} else if (document.documentElement.scrollTop < 20) {
+					document.querySelector("nav").className = "stiki";
+					logo.innerHTML = '<img src="../ikon/logo-black.svg">';
+					button.style.color = 'black';
+	
+	
+					document.querySelector("nav ul").className = "sticki";
+					// navul.style.backgroundColor = 'white';
+	
+					
+				}
+			}
+		   
+	</script>
+
+
+</body>
+</html>

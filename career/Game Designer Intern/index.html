@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+ 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="shortcut icon" href="../../ikon/logoBar.jpeg">
+    <link rel="stylesheet" href="../../css/career/style.css">
+    <title>Game Designer Intern</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+	<nav class="stiky">
+		<div class="logo">
+		  <img src="../../ikon/logo-black.svg" alt="">
+		</div>
+		<input type="checkbox" id="click">
+		<label for="click" class="menu-btn">
+		<i class="fas fa-bars"></i>
+		</label>
+		<ul>
+		   <li><a href="../index.html">Home</a></li>
+		   <li><a href="../../about/index.html">About</a></li>
+		   <li><a href="../../games/index.html">Games</a></li>
+		   <li><a href="../../news/index.html">News</a></li>
+           <li><a class="active" href="../career/Music Composer/index.html">Career</a></li>
+		   <li><a href="../../contact/index.html">Contact</a></li>
+		</ul>
+   </nav>
+
+<!-- Navigation Bar -->
+
+<!-- Section Hero Start -->
+<section class="hero">
+    <div class="container">
+        <div class="container-child">
+            <p class="hc">Game Designer Intern</p>
+            <p class="hcc">Intership | WFH/Remote</p>
+        </div>
+    </div>
+</section>
+<!-- Setion Hero End -->
+
+
+
+
+<!-- Section Article Start -->
+<section class="section-article">
+    <div class="container-article">
+        <p class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus numquam porro expedita accusamus quia, maxime eius reprehenderit commodi error dolorum consequatur nulla corrupti! Nemo consectetur tempore vero magni? Labore molestiae illum laboriosam perspiciatis distinctio mollitia fugiat dolores doloribus tempore magni tempora, suscipit itaque quibusdam aliquam deleniti quis facere rem a! Aperiam itaque unde praesentium voluptatem impedit cupiditate, ratione sunt sequi dolor commodi recusandae alias! Accusamus similique illo hic repellat fuga veritatis cumque ut neque quidem consectetur dolorum illum voluptates consequatur nam eligendi fugit non corporis, quo, ducimus, obcaecati totam cum laudantium praesentium? Eos dolorem quisquam eius fuga delectus. Facilis, impedit!</p>
+
+        <p class="rs1" style="font-weight: 700; ">
+            Requirements:
+            <ul class="rs">
+                <li>Requirements sample</li>
+                <li>Requirements sample</li>
+                <li>Requirements sample</li>
+                <li>Requirements sample</li>
+            </ul>
+        </p>
+        
+        <p class="rs1" style="font-weight: 700; ">
+            Responsbilities:
+            <ul class="rs">
+                <li> Responsbilities sample</li>
+                <li> Responsbilities sample</li>
+                <li> Responsbilities sample</li>
+                <li> Responsbilities sample</li>
+            </ul>
+        </p>
+
+    </div>
+</section>
+<!-- Section Article End -->
+<section class="s-button">
+    <div class="button">
+        <button>Apply</button>
+    </div>
+</section>
+
+<!-- Footer Start -->
+<footer>
+    <img src="../../img/bg-footer.png" alt="">
+    <div class="footer-content">
+        <p>&copy 2022 Nexvel Entertainment | PT Nexvel Digital Group All Right Reserved</p>
+        <div class="footer-icon">
+            <a href="https://www.facebook.com/nexvelentertainment"> <img src="../../ikon/footer/fb-black.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/nexvelentertainment">  <img src="../../ikon/footer/ig-black.svg" alt="instagram"></a>
+            <a href="https://www.twitter.com/nexvelentertainment">  <img src="../../ikon/footer/twitter-black.svg" alt="twitter"></a>
+            <a href=" https://www.tiktok.com/@nexvelentertainment">  <img src="../../ikon/footer/tiktok-black.svg" alt="tiktok"></a>
+            <a href="https://www.youtube.com/channel/UCx7Svbq8skJ6EjpH5Gp1irQ"><img src="../../ikon/footer/yt-black.svg" alt="youtube"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Footer End -->
+
+
+
+
+<script>
+
+    const nav = document.querySelector("nav");
+            const logo = document.querySelector('.logo');
+            const button = document.querySelector('.menu-btn i');
+            const navul = document.querySelector('nav ul');
+            const navuli = document.querySelector('nav ul li a');
+            window.onscroll = function() {myFunction()};
+            
+    
+            function myFunction() {
+                if (document.documentElement.scrollTop > 20) {
+                    document.querySelector("nav").className = "sticky";
+                    logo.innerHTML = '<img src="../../ikon/logo-white.svg">';
+                    button.style.color = 'white';
+    
+    
+                    document.querySelector("nav ul").className = "sticky";
+                    // navul.style.backgroundColor = 'black';
+    
+            
+                } else if (document.documentElement.scrollTop < 20) {
+                    document.querySelector("nav").className = "stiki";
+                    logo.innerHTML = '<img src="../../ikon/logo-black.svg">';
+                    button.style.color = 'black';
+    
+    
+                    document.querySelector("nav ul").className = "sticki";
+                    // navul.style.backgroundColor = 'white';
+    
+                    
+                }
+            }
+           
+    </script>
+</body>
+</html>

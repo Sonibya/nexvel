@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="/ikon/logoBar.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">
+              <img src="ikon/logo-white.svg" alt="">
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+               <li><a class="active" href="#">Home</a></li>
+               <li><a href="about/index.html">About</a></li>
+               <li><a href="games/index.html">Games</a></li>
+               <li><a href="news/index.html">News</a></li>
+               <li><a href="career/index.html">Career</a></li>
+               <li><a href="contact/index.html">Contact</a></li>
+            </ul>
+       </nav>
+
+    <!-- Navigation Bar -->
+    <section class="section-1">
+       <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/warungnasi.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Warung Nasi Campur</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/satayshop.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Satay Shop Tycoon</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/jomblo.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Jomblo Rise Up</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </section>
+
+	
+    <section class="section-2">
+        <div data-aos="fade-down" class="sec-h1"> <p> OUR <span id="orange">AWESOME</span> GAMES</p></div>
+        <div class="games-group">
+             <div  data-aos="flip-left" class="game1">
+                 <div class="gambar"> <img src="img/HG/merahputih.png" alt=""></div>
+                 <div class="game-name"><p>Merah Putih</p></div>
+                 <button id="v">View</button>
+             </div>
+             <div data-aos="flip-up" class="game2">
+                <div class="gambar"> <img src="img/HG/jru.png" alt=""></div>
+                <div class="game-name"><p>Jomblo Rise Up</p></div>
+                <button id="v">View</button>
+            </div>
+            <div data-aos="flip-down" class="game3">
+                <div class="gambar"> <img src="img/HG/satay.png" alt=""></div>
+                <div class="game-name"><p>Satay Shop Tycoon</p></div>
+                <button id="c">Coming Soon</button>
+            </div>
+            <div  data-aos="flip-right" class="game4">
+                <div class="gambar"> <img src="img/HG/warungnasi.png" alt=""></div>
+                <div class="game-name"><p>Warung Nasi Campur</p></div>
+                <button id="c">Coming Soon</button>
+            </div>
+        </div>
+       
+            <a id="vm" href="games/index.html">View More</a>
+      
+    </section>
+
+    <section class="section-3">
+        <div data-aos="flip-left" class="sec-h1"><p> NEWS</p></div>
+        <div class="news-container">
+            <div data-aos="zoom-in-right" class="news">
+                <button data-aos="zoom-in-right" id="newsp"><a href="news/index.html"  New!>News</a></button>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <!-- <img src="img/bg-footer.png" alt=""> -->
+        <div class="footer-content">
+            <p>&copy 2022 Nexvel Entertainment | PT Nexvel Digital Group All Rights Reserved</p>
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/nexvelentertainment"> <img src="ikon/footer/fb-black.svg" alt="facebook"></a>
+                <a href="https://www.instagram.com/nexvelentertainment">  <img src="ikon/footer/ig-black.svg" alt="instagram"></a>
+                <a href="https://www.twitter.com/nexvelentertainment">  <img src="ikon/footer/twitter-black.svg" alt="twitter"></a>
+                <a href=" https://www.tiktok.com/@nexvelentertainment">  <img src="ikon/footer/tiktok-black.svg" alt="tiktok"></a>
+                <a href="https://www.youtube.com/channel/UCx7Svbq8skJ6EjpH5Gp1irQ"><img src="ikon/footer/yt-black.svg" alt="youtube"></a>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <!--   // <script src="js/script.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+        AOS.init();
+     </script>
+</body>
+</html>
